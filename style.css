@@ -77,4 +77,48 @@ main {
             opacity: 0.35;
         }
     }
+
+    .input-box:has(input:focus) {
+        outline: 2px solid var(--topaz);
+    }
+
+    .tip div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.6rem;
+        margin-top: .8rem;
+
+        button {
+            font-size: 2.4rem;
+            color: var(--white);
+            font-weight: 700;
+            border: none;
+            border-radius: .5rem;
+            padding-block: .6rem;
+            background: var(--sherpa-blue);
+        }
+
+        .button-selected {
+            background: var(--topaz);
+        }
+
+        input {
+            width: 100%;
+            font-size: 2.4rem;
+            text-align: center;
+            font-weight: 700;
+            border: none;
+            color: var(--sherpa-blue);
+            background: var(--squeeze);
+            border-radius: .5rem;
+        }
+
+        input::placeholder {
+            color: var(--beetle-green);
+        }
+
+        input:focus {
+            outline: 2px solid var(--topaz);
+        }
+    }
 }
