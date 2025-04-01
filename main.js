@@ -68,3 +68,10 @@ function reset() {
     tipPercentage = 0
     removeClassButtonSelected()
     document.querySelector("#custom-tip").value = ""
+
+    numberOfPeopleInput.value = ""
+    numberOfPeople = 0
+
+    document.querySelector(".amount strong").innerText = "$0.00"
+    document.querySelector(".total strong").innerText = "$0.00"
+}
