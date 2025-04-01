@@ -60,3 +60,11 @@ function calculate() {
         totalStrong.innerText = `$${totalPerson.toFixed(2)}`
     }
 }
+
+function reset() {
+    billInput.value = ""
+    bill = 0
+
+    tipPercentage = 0
+    removeClassButtonSelected()
+    document.querySelector("#custom-tip").value = ""
